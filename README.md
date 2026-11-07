@@ -1,115 +1,91 @@
-# Pyme for Android
+# Komma POS
 
-**Photograph a supplier invoice. Find the expense draft waiting in your panel.**
+The phone of the owner of **Komma POS Retail**. It shows what every store has
+sold today, the cash that should be in the drawer, every Z closing and the gift
+vouchers, as they happen, and sends a notification when something needs the
+owner's eye. The figures arrive from the tills; nothing is typed on the phone.
 
-This is the official download page of the Pyme capture app for Android, by [Komma SoftHouse](https://kommasofthouse.com). Pyme is the invoicing product for small businesses with VERI\*FACTU, TicketBAI and FACe built in: [pyme.kommasofthouse.com](https://pyme.kommasofthouse.com).
+## Download
 
-[**Download the latest version**](https://github.com/komma-softhouse/pyme-app-android-releases/releases/latest)
+| System | Download |
+| --- | --- |
+| **Android 13 or later** | [Latest version](https://github.com/komma-softhouse/komma-pos-owner-android-releases/releases/latest): the `.apk` file |
 
----
+Every published version is listed under
+[Releases](https://github.com/komma-softhouse/komma-pos-owner-android-releases/releases).
+Each version also carries its `.sha256` file to check that the `.apk` has not
+been altered. The easiest way is to download it from the till itself, in
+**Settings → Owner app**, which always links the latest version.
 
-## What the app does
+<p>
+  <img src="assets/02-today.jpeg" width="200" alt="Today">
+  <img src="assets/03-movements.jpeg" width="200" alt="Movements">
+  <img src="assets/05-z-closing.jpeg" width="200" alt="A Z closing">
+</p>
 
-| | |
-|---|---|
-| **Capture** | Take a photo of a supplier invoice or ticket, or pick one from the gallery. |
-| **Read** | Pyme reads supplier, date, lines and taxes and creates an expense draft. If the reading does not match the printed total, nothing is created and the app tells you why. |
-| **Review** | The draft waits in Expenses in your panel. You check it and book it. Nothing is booked on its own. |
-| **Offline** | No coverage at the counter or in the van? The capture waits on the phone and is sent on its own when the signal returns. |
-| **Follow** | Every capture shows where it stands: waiting for network, being read, draft created, or not created with the reason. |
-| **Several businesses** | If your account has more than one issuer, choose which one receives each capture. |
+## What it does
 
-## Screenshots
-
-| Pairing | Capture | Sent | Settings |
-|---|---|---|---|
-| ![Pairing](assets/01-pair.jpeg) | ![Capture](assets/02-capture.jpeg) | ![Sent](assets/03-sent.jpeg) | ![Settings](assets/04-settings.jpeg) |
-
-## Before you start
-
-- A Pyme account with a plan that includes expenses and photo readings.
-- An Android phone with a camera and an internet connection.
-
-No account yet? [Create one](https://pyme.kommasofthouse.com/signup).
+- **Today.** Sold so far, compared with the same day last week, sales by hour,
+  cash expected in the drawer, card, average ticket, discounts and vouchers.
+- **Movements.** Every sale, return, cash in and out and voucher of the day, as
+  it happens, filtered by kind and 50 at a time.
+- **Closings.** The open till and every Z closing, with the cash counted and
+  whether it balances.
+- **Vouchers.** The balance still to be spent, vouchers sold and courtesy
+  vouchers of the month.
+- **Alerts.** A notification when a closing is done or does not balance, a sale
+  is voided, cash leaves the drawer, a big discount or a courtesy voucher is
+  given, or a store goes offline. The owner chooses which ones, from what amount
+  and the quiet hours.
+- **Several stores.** Switch between them at the top of the screen.
+- **Without network.** If the store loses its connection, the movements wait on
+  the till and arrive in order when it comes back.
+- **Updates itself.** From **Alerts → Alert settings**, without Google Play.
 
 ## Install
 
-1. On the phone, open the [latest release](https://github.com/komma-softhouse/pyme-app-android-releases/releases/latest) and download `Pyme-<version>.apk`.
-2. Open the downloaded file.
-3. Android asks whether to allow installing apps from your browser. Allow it; you can switch it off again afterwards.
-4. Press **Install**, then **Open**.
+1. On the phone, open the
+   [latest version](https://github.com/komma-softhouse/komma-pos-owner-android-releases/releases/latest)
+   and download the `.apk` file.
+2. Open it. If Android asks for permission to install apps from this source,
+   allow it for the browser and go back.
+3. Tap **Install**. Komma POS appears in the app drawer.
 
-## Pair the phone with your account
+## Getting started
 
-1. In your Pyme panel, open **Pyme → Mobile app** and press **Pair a phone**. A QR code appears.
-2. In the app, press **Scan the pairing code** and point at the QR.
-3. The phone is linked to your account. The code works once and expires after 15 minutes.
+1. **Sign in** with the email and password of the account that owns the
+   Komma POS Retail licence.
+2. **Allow notifications** when the app asks, so the alerts reach the phone.
+3. **Choose your alerts** in **Alerts → Alert settings**: which ones, from what
+   amount and the quiet hours.
 
-No camera at hand for the QR? Press **Type it instead** and enter the address of your panel and the code shown under the QR.
+<p>
+  <img src="assets/01-sign-in.jpeg" width="200" alt="Sign in">
+  <img src="assets/07-alerts.jpeg" width="200" alt="Alerts">
+  <img src="assets/08-alert-settings.jpeg" width="200" alt="Alert settings">
+</p>
 
-## Send your first invoice
+## Requirements
 
-1. Choose **Invoice** or **Ticket**.
-2. Press **Take the photo**. Keep the whole document inside the frame, flat and well lit.
-3. In a few moments the capture shows **Draft in Expenses**.
-4. In your panel, open **Expenses**, review the draft and book it.
+- Android 13 or later.
+- A Komma POS Retail licence with the owner app included.
+- Wi-Fi or mobile data on the phone, and internet at the store so the till can
+  send its movements.
 
 ## Updates
 
-The app updates itself from this page. Open **Settings → Updates → Check for updates**; when a new version exists, the app downloads it, checks it and opens the installer.
+In **Alerts → Alert settings** tap **Check for updates**. If there is a new
+version, **Download and install** fetches it, checks that it arrived complete
+and opens the Android installer. The first time, Android asks to allow
+installing from Komma POS. The phone stays signed in.
 
-The first time, Android asks you to allow Pyme to install updates. The app takes you to that permission.
+## If something fails
 
-## Check your download
-
-Every release publishes the SHA-256 of its APK next to it (`Pyme-<version>.apk.sha256`). To check a file downloaded to a computer:
-
-```bash
-shasum -a 256 Pyme-<version>.apk
-```
-
-The result must match the published one. All versions are signed with the same key, so Android refuses any file that does not come from Komma SoftHouse as an update of the installed app.
-
-## Permissions
-
-| Permission | Why |
-|---|---|
-| Camera | To photograph documents and to scan the pairing QR. |
-| Photos | Only when you pick a document from the gallery. |
-| Internet | To send captures to your own panel. |
-| Install apps | Only for the app to install its own updates. |
-
-## Your data
-
-- The app talks only to the address of your own panel, over HTTPS.
-- The address and the access key of the phone are kept in the secure storage of the device.
-- A photo stays on the phone only until your panel confirms the draft. Then it is deleted from the phone.
-- Unpairing, from the app or from your panel, cuts the access at once and clears what the app had stored.
-
-## Problems
-
-**"That code is not valid or has expired"** — Codes last 15 minutes and work once. Press **Pair a phone** again in your panel and scan the new one.
-
-**"No connection to …"** — Check the phone has internet and, if you typed the address, that it is the address of your own panel.
-
-**A capture says "Not created"** — The reason is written under it. The usual ones: the photo is blurred or cut, the totals do not match what is printed, or your plan has no readings left this period. Take the photo again or press **Send again**.
-
-**A capture stays in "Waiting for network"** — Open the app with coverage; it is sent on its own.
-
-**The app asks to pair again** — The phone was unpaired from the panel. Pair it again; what it had already sent is still in your panel.
-
-**Android does not let me install** — Allow installing from your browser when Android asks, or look for "Install unknown apps" in the phone settings.
-
-## Versions
-
-Every version, with its changes, is listed in [Releases](https://github.com/komma-softhouse/pyme-app-android-releases/releases).
+When the app meets an unexpected error it shows an incident code and a button
+to report it. The report reaches Komma with the code, the version and the
+screen, never sales or customer data. If you call support, have the code at
+hand.
 
 ## Support
 
-info@kommasofthouse.com
-
-Something went wrong inside the app? The error screen has a **Report the error** button that sends us what happened with a code you can quote.
-
-## Licence
-
-Proprietary software. © Komma SoftHouse. This repository holds only the signed builds; the source code is not public.
+Komma SoftHouse · [kommasofthouse.com](https://kommasofthouse.com) · info@kommasofthouse.com
